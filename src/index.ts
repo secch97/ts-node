@@ -1,11 +1,7 @@
-import { Hero } from "./classes/Hero";
+import { getPokemon } from "./generics/get-pokemon";
 
-
-console.log('Hola Mundo!');
-const ironman = new Hero("Ironman",1,55);
-console.log(ironman.power)
-
-
+getPokemon(4)
+    .then((response)=>console.log(response));
 
 
 
